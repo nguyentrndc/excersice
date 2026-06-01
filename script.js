@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const elSocialEmail = document.querySelector('.email-social-link');
 
     if (elName) elName.textContent = PROFILE_CONFIG.fullName;
-    if (elTag) elTag.textContent = PROFILE_CONFIG.titleTag + " - " + PROFILE_CONFIG.major;
+    if (elTag) elTag.textContent = PROFILE_CONFIG.titleTag;
     if (elMsv) elMsv.textContent = PROFILE_CONFIG.studentId;
     if (elLop) elLop.textContent = PROFILE_CONFIG.classBadge;
     if (elFooterCopyright) elFooterCopyright.textContent = PROFILE_CONFIG.fullNameFooter;
