@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bento Portfolio | Trần Đức Nguyên</title>
+  <!-- SEO -->
+  <meta name="description" content="Digital Portfolio của Trần Đức Nguyên cho môn học Nhập môn Công nghệ số và AI tại UET-VNU. Thiết kế bento grid hiện đại.">
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-theme">
+  <!-- BACKGROUND EFFECTS -->
+  <div class="space-bg">
+    <div class="starfield"></div>
+    <div class="nebula-1"></div>
+    <div class="nebula-2"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-dot"></span>
+        <span class="logo-text">TDN.DEV</span>
+      </a>
+      <div class="nav-links-wrapper">
+        <ul class="nav-tabs">
+          <li class="tab-item"><a href="#dashboard" class="tab-link active" data-tab="dashboard-section"><i class="fa-solid fa-shapes"></i> Tổng quan</a></li>
+          <li class="tab-item"><a href="#projects" class="tab-link" data-tab="projects-section"><i class="fa-solid fa-box-open"></i> Dự án bài tập</a></li>
+          <li class="tab-item"><a href="#reflection" class="tab-link" data-tab="reflection-section"><i class="fa-solid fa-brain"></i> Báo cáo tổng kết</a></li>
+        </ul>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-btn" id="theme-btn" title="Giao diện Sáng/Tối">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" title="Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN DASHBOARD CONTENT -->
+  <main class="dashboard-container">
+    
+    <!-- SECTION 1: BENTO DASHBOARD -->
+    <section id="dashboard-section" class="tab-content active">
+      <div class="bento-grid">
+        
+        <!-- BENTO CARD 1: PROFILE HERO (2x2 Grid Space) -->
+        <div class="bento-card hero-card col-span-2 row-span-2">
+          <div class="hero-header">
+            <div class="profile-glow-ring">
+              <img src="img/avata.jpg" alt="Trần Đức Nguyên" class="profile-img">
+            </div>
+            <div class="hero-title-group">
+              <span class="hero-badge">UET - VNU Member</span>
+              <h1 class="hero-name">Trần Đức Nguyên</h1>
+              <p class="hero-subtext">Sinh viên Khoa học Máy tính</p>
+            </div>
+          </div>
+          <p class="hero-bio">
+            Chào mừng bạn đến với Portfolio kỹ thuật số cá nhân của tôi. Đây là không gian lưu trữ và hệ thống hóa các sản phẩm thực hành từ môn học <strong>"Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo"</strong>. Nơi tôi ghi dấu những bước đầu tiên trên hành trình làm chủ công nghệ số.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="action-btn primary-action" onclick="document.querySelector('[data-tab=projects-section]').click();"><i class="fa-solid fa-arrow-trend-up"></i> Khám phá bài tập</a>
+            <button class="action-btn secondary-action" id="copy-email-btn"><i class="fa-solid fa-envelope"></i> Gửi Email</button>
+          </div>
+        </div>
+
+        <!-- BENTO CARD 2: QUICK METRICS (1x1 Grid Space) -->
+        <div class="bento-card metric-card">
+          <div class="metric-icon color-blue"><i class="fa-solid fa-address-card"></i></div>
+          <div class="metric-info">
+            <span class="metric-label">Mã số sinh viên</span>
+            <h3 class="metric-value">22020000</h3>
+          </div>
+        </div>
+
+        <!-- BENTO CARD 3: CLASS INFO (1x1 Grid Space) -->
+        <div class="bento-card metric-card">
+          <div class="metric-icon color-purple"><i class="fa-solid fa-users"></i></div>
+          <div class="metric-info">
+            <span class="metric-label">Lớp học phần</span>
+            <h3 class="metric-value">K67-CAC-1</h3>
+          </div>
+        </div>
+
+        <!-- BENTO CARD 4: CORE VALUES & HOBBIES (1x2 Grid Space) -->
+        <div class="bento-card hobbies-card row-span-2">
+          <h3 class="card-title"><i class="fa-solid fa-fingerprint"></i> Lĩnh vực quan tâm</h3>
+          <p class="card-desc">Những chủ đề và công nghệ tôi luôn tìm tòi, ứng dụng hàng ngày.</p>
+          <div class="hobby-tags">
+            <span class="hobby-tag"><i class="fa-solid fa-code"></i> Lập trình</span>
+            <span class="hobby-tag"><i class="fa-solid fa-robot"></i> Trí tuệ nhân tạo</span>
+            <span class="hobby-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Prompt Engineering</span>
+            <span class="hobby-tag"><i class="fa-solid fa-cubes"></i> Web Development</span>
+            <span class="hobby-tag"><i class="fa-solid fa-file-shield"></i> An toàn số</span>
+            <span class="hobby-tag"><i class="fa-solid fa-photo-film"></i> Sáng tạo nội dung</span>
+          </div>
+        </div>
+
+        <!-- BENTO CARD 5: ACADEMIC TIMELINE (2x2 Grid Space) -->
+        <div class="bento-card timeline-card col-span-2 row-span-2">
+          <h3 class="card-title"><i class="fa-solid fa-route"></i> Lộ trình phát triển cá nhân</h3>
+          <div class="bento-timeline">
+            <div class="timeline-step">
+              <div class="step-marker"><div class="marker-dot"></div></div>
+              <div class="step-details">
+                <span class="step-time">Giai đoạn hiện tại (Học kỳ II - 2026)</span>
+                <h4>Ứng dụng Công nghệ số & AI</h4>
+                <p>Nắm vững phương pháp lưu trữ khoa học, kỹ thuật tìm kiếm học thuật chuyên sâu và tối ưu hóa Prompt Generative AI để hỗ trợ học tập hiệu quả.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="step-marker"><div class="marker-dot"></div></div>
+              <div class="step-details">
+                <span class="step-time">Giai đoạn tiếp theo (Cuối 2026)</span>
+                <h4>Nâng cao kỹ nghệ phần mềm</h4>
+                <p>Nghiên cứu kiến trúc ứng dụng web, thuật toán nâng cao và bắt đầu đóng góp cho các dự án phần mềm nguồn mở lớn.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="step-marker"><div class="marker-dot"></div></div>
+              <div class="step-details">
+                <span class="step-time">Định hướng tương lai (2027-2028)</span>
+                <h4>Chuyên sâu Trí tuệ nhân tạo</h4>
+                <p>Đi sâu vào Machine Learning và NLP (Xử lý ngôn ngữ tự nhiên) để xây dựng các giải pháp tự động hóa quy trình cộng tác số nhóm.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BENTO CARD 6: PORTFOLIO GOALS (2x1 Grid Space) -->
+        <div class="bento-card goals-card col-span-2">
+          <div class="goals-content">
+            <div class="goals-text">
+              <h3 class="card-title"><i class="fa-solid fa-lightbulb"></i> Mục tiêu dự án Portfolio</h3>
+              <p>Hệ thống hóa toàn bộ minh chứng năng lực số, rèn luyện tư duy tự phản chiếu và xây dựng kỹ năng thuyết trình sản phẩm công nghệ cá nhân chuyên nghiệp.</p>
+            </div>
+            <div class="goals-icon-box"><i class="fa-solid fa-bullseye-arrow"></i></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: PROJECTS VIEW (DASHBOARD CARDS) -->
+    <section id="projects-section" class="tab-content">
+      <div class="section-heading">
+        <h2 class="section-title">Bài tập dự án lớn</h2>
+        <p class="section-subtitle">Tổng hợp 6 bài thực hành kỹ năng số và ứng dụng AI cốt lõi.</p>
+      </div>
+
+      <div class="dashboard-projects-grid">
+        <!-- PROJECT 1 -->
+        <div class="project-board-card" data-id="1">
+          <div class="project-card-image">
+            <img src="img/exercise1.png" alt="Thao tác tệp tin và thư mục">
+            <div class="project-overlay-badge">Bài 1</div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Quản lý tệp tin & Thư mục</h3>
+            <p class="project-card-desc">Thiết lập cấu trúc cây thư mục tối ưu ThucHanh_TranDucNguyen và thực hiện các thao tác quản trị tệp tin khoa học.</p>
+            <div class="project-card-footer">
+              <span class="tag">Windows OS</span>
+              <button class="open-drawer-btn" data-id="1">Xem chi tiết <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-board-card" data-id="2">
+          <div class="project-card-image">
+            <img src="img/exercise2.png" alt="Tìm kiếm học thuật">
+            <div class="project-overlay-badge">Bài 2</div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Tìm kiếm & Đánh giá học thuật</h3>
+            <p class="project-card-desc">Khai thác tài liệu nghiên cứu tác động của AI đến hành vi mua sắm của Gen Z bằng các toán tử tìm kiếm chuyên sâu.</p>
+            <div class="project-card-footer">
+              <span class="tag">Google Scholar</span>
+              <button class="open-drawer-btn" data-id="2">Xem chi tiết <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-board-card" data-id="3">
+          <div class="project-card-image">
+            <img src="img/exercise3.png" alt="Kỹ nghệ Prompt">
+            <div class="project-overlay-badge">Bài 3</div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Kỹ nghệ Prompt (Prompt Eng)</h3>
+            <p class="project-card-desc">Tối ưu câu lệnh cho các tác vụ học tập qua phương pháp CoT, đóng vai và xây dựng bộ nguyên tắc C.R.E.A.T.E.</p>
+            <div class="project-card-footer">
+              <span class="tag">Generative AI</span>
+              <button class="open-drawer-btn" data-id="3">Xem chi tiết <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-board-card" data-id="4">
+          <div class="project-card-image">
+            <img src="img/exercise4.png" alt="Cộng tác trực tuyến">
+            <div class="project-overlay-badge">Bài 4</div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Hợp tác & Cộng tác số</h3>
+            <p class="project-card-desc">Phối hợp lập kế hoạch xây dựng web du lịch Hà Nội qua bảng Kanban trên Trello và công cụ đám mây Google Drive.</p>
+            <div class="project-card-footer">
+              <span class="tag">Kanban / Cloud</span>
+              <button class="open-drawer-btn" data-id="4">Xem chi tiết <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-board-card" data-id="5">
+          <div class="project-card-image">
+            <img src="img/exercise5.png" alt="Sáng tạo nội dung số">
+            <div class="project-overlay-badge">Bài 5</div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Sáng tạo nội dung số</h3>
+            <p class="project-card-desc">Biên soạn bài viết blog khoa học bằng Gemini, sinh ảnh minh họa bằng DALL-E 3 và dàn trang thiết kế trên Canva.</p>
+            <div class="project-card-footer">
+              <span class="tag">Content Creation</span>
+              <button class="open-drawer-btn" data-id="5">Xem chi tiết <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="project-board-card" data-id="6">
+          <div class="project-card-image">
+            <img src="img/exercise6.png" alt="An toàn và liêm chính học thuật">
+            <div class="project-overlay-badge">Bài 6</div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Liêm chính học thuật & AI</h3>
+            <p class="project-card-desc">Nghiên cứu ranh giới sử dụng AI có trách nhiệm và xây dựng infographic tuyên truyền nguyên tắc liêm chính cá nhân.</p>
+            <div class="project-card-footer">
+              <span class="tag">Digital Ethics</span>
+              <button class="open-drawer-btn" data-id="6">Xem chi tiết <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: REFLECTION VIEW -->
+    <section id="reflection-section" class="tab-content">
+      <div class="section-heading">
+        <h2 class="section-title">Báo cáo & Thu hoạch</h2>
+        <p class="section-subtitle">Tự phản chiếu quá trình học tập và hoàn thiện kỹ năng số.</p>
+      </div>
+
+      <div class="reflection-layout">
+        <!-- Quote card -->
+        <div class="reflection-intro-card">
+          <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p>
+            Việc hoàn thành hệ thống Portfolio này là cơ hội lớn để tôi nhìn nhận lại hành trình của mình. Không còn là những bài thực hành rời rạc, việc kết hợp và cấu trúc chúng thành một sản phẩm web hoàn chỉnh giúp tôi kết nối chặt chẽ lý thuyết công nghệ số với thực tiễn ứng dụng.
+          </p>
+        </div>
+
+        <div class="reflection-bento-grid">
+          <!-- Highlights -->
+          <div class="reflection-subcard highlights-card">
+            <h3><i class="fa-solid fa-circle-check"></i> Điểm tâm đắc nhất</h3>
+            <ul class="reflection-list">
+              <li>
+                <div class="list-bullet"><i class="fa-solid fa-star"></i></div>
+                <p><strong>Cấu trúc dữ liệu khoa học (Bài 1):</strong> Rèn luyện được tư duy tổ chức cây thư mục chuẩn hóa giúp công việc học tập luôn ngăn nắp và tiết kiệm thời gian tìm kiếm.</p>
+              </li>
+              <li>
+                <div class="list-bullet"><i class="fa-solid fa-star"></i></div>
+                <p><strong>Hợp tác đám mây hiệu quả (Bài 4):</strong> Vận hành trơn tru tiến trình nhóm qua Trello Kanban và xử lý tài liệu đồng thời trên Google Workspace.</p>
+              </li>
+              <li>
+                <div class="list-bullet"><i class="fa-solid fa-star"></i></div>
+                <p><strong>Làm chủ câu lệnh AI (Bài 3, 5):</strong> Biết cách khai thác mô hình Generative AI như một người trợ lý thông thái thay vì chép bài thụ động, giúp tăng năng suất tư duy rõ rệt.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Challenges -->
+          <div class="reflection-subcard challenges-card">
+            <h3><i class="fa-solid fa-triangle-exclamation"></i> Thách thức lớn nhất</h3>
+            <ul class="reflection-list">
+              <li>
+                <div class="list-bullet"><i class="fa-solid fa-circle-nodes"></i></div>
+                <p><strong>Quản lý tiến độ nhóm:</strong> Phối hợp lịch làm việc không đồng bộ của các thành viên đòi hỏi sự cam kết cao và phân rã task rất chi tiết trên Trello.</p>
+              </li>
+              <li>
+                <div class="list-bullet"><i class="fa-solid fa-circle-nodes"></i></div>
+                <p><strong>Đánh giá tính tin cậy nguồn tin:</strong> Đối mặt với lượng lớn kết quả tìm kiếm rác trên Internet, việc ứng dụng ma trận CRAAP để chọn lọc nguồn uy tín là một thử thách ban đầu.</p>
+              </li>
+              <li>
+                <div class="list-bullet"><i class="fa-solid fa-circle-nodes"></i></div>
+                <p><strong>Ranh giới đạo đức AI (Bài 6):</strong> Luôn phải duy trì tư duy phản biện cao để đảm bảo sản phẩm cuối cùng thể hiện đúng dấu ấn cá nhân mà không lạm dụng AI.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Skills Progress Card -->
+        <div class="skills-dashboard-card">
+          <h3><i class="fa-solid fa-chart-line-up"></i> Mức độ tự đánh giá năng lực số đạt được</h3>
+          <div class="skills-grid-layout">
+            
+            <div class="skill-progress-bar">
+              <div class="skill-meta">
+                <span class="skill-name">Quản lý File & Tin học (Bài 1)</span>
+                <span class="skill-num">85%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="--width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-bar">
+              <div class="skill-meta">
+                <span class="skill-name">Đánh giá thông tin học thuật (Bài 2)</span>
+                <span class="skill-num">90%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="--width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-bar">
+              <div class="skill-meta">
+                <span class="skill-name">Kỹ nghệ Prompt Engineering (Bài 3)</span>
+                <span class="skill-num">95%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="--width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-bar">
+              <div class="skill-meta">
+                <span class="skill-name">Cộng tác số & Quản lý dự án (Bài 4)</span>
+                <span class="skill-num">88%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="--width: 88%"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-bar">
+              <div class="skill-meta">
+                <span class="skill-name">Sáng tạo nội dung số (Bài 5)</span>
+                <span class="skill-num">80%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="--width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-progress-bar">
+              <div class="skill-meta">
+                <span class="skill-name">An toàn số & Liêm chính (Bài 6)</span>
+                <span class="skill-num">95%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="--width: 95%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       SIDEBAR INTERACTIVE DRAWER (NEW DESIGN CONCEPT)
+       ========================================== -->
+  <div class="project-drawer" id="project-drawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="drawer-content-box">
+      <div class="drawer-header">
+        <div class="drawer-title-group">
+          <span class="drawer-badge" id="drawer-exercise-id">Bài tập 1</span>
+          <h3 id="drawer-exercise-title">Tên Bài Tập Chi Tiết</h3>
+        </div>
+        <button class="close-drawer-btn" id="close-drawer" title="Đóng bảng"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="drawer-body">
+        
+        <div class="drawer-section">
+          <h4><i class="fa-solid fa-compass"></i> Mục tiêu bài tập</h4>
+          <p id="drawer-exercise-objective">Mô tả mục tiêu của bài học phần lớn...</p>
+        </div>
+
+        <div class="drawer-section">
+          <h4><i class="fa-solid fa-list-check"></i> Quy trình thực hiện</h4>
+          <p id="drawer-exercise-process">Nội dung tóm tắt các bước thực hiện...</p>
+        </div>
+
+        <div class="drawer-section">
+          <h4><i class="fa-solid fa-file-invoice"></i> Báo cáo PDF đính kèm</h4>
+          <div class="drawer-pdf-alert">
+            <i class="fa-solid fa-circle-nodes"></i>
+            <span>Đường dẫn báo cáo gốc: <code id="drawer-pdf-path">Baitap/Bai1.pdf</code></span>
+          </div>
+          
+          <div class="drawer-pdf-viewer">
+            <!-- Iframe to preview PDF -->
+            <iframe src="" class="pdf-frame-view" id="drawer-pdf-frame" title="Xem trước báo cáo"></iframe>
+            
+            <!-- Fallback design -->
+            <div class="drawer-pdf-fallback" id="drawer-pdf-fallback">
+              <i class="fa-solid fa-file-pdf"></i>
+              <h5 id="fallback-status-title">Đang mở tài liệu...</h5>
+              <p>Nếu PDF không tự động tải do cấu hình bảo mật trình duyệt của bạn, bạn có thể tải về file báo cáo trực tiếp phía dưới.</p>
+              <a href="" class="action-btn primary-action" id="drawer-pdf-download" download target="_blank">
+                <i class="fa-solid fa-circle-down"></i> Tải báo cáo PDF về máy
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER SECTION -->
+  <footer class="dashboard-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h4>Trần Đức Nguyên.</h4>
+        <p>Môn học: Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo</p>
+        <p>Trường Đại học Công nghệ - ĐHQGHN (UET-VNU)</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:nguyen.td@vnu.edu.vn" class="email-social-link" aria-label="Mail"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://uet.vnu.edu.vn" target="_blank" aria-label="UET Link"><i class="fa-solid fa-school"></i></a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2026 - Bento Portfolio. Phát triển bởi <span id="footer-author-name">Trần Đức Nguyên</span>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="Plant.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
