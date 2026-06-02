@@ -14,7 +14,7 @@ const PROFILE_CONFIG = {
   titleTag: "",
 
   // Lớp học của bạn
-  classBadge: "K70E-CE3",
+  classBadge: "Kỹ thuật Máy tính",
 
   // Mã số sinh viên
   studentId: "25020726",
