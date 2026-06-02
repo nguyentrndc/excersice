@@ -11,10 +11,10 @@ const PROFILE_CONFIG = {
   fullNameFooter: "Tran Duc Nguyen",
 
   // Mô tả ngắn dưới tên (Ví dụ: Sinh viên Kỹ thuật, Lập trình viên tập sự,...)
-  titleTag: "",
+  titleTag: "Ngành: Kỹ thuật Máy tính",
 
   // Lớp học của bạn
-  classBadge: "Kỹ thuật Máy tính",
+  classBadge: "K70E-CE3",
 
   // Mã số sinh viên
   studentId: "25020726",
